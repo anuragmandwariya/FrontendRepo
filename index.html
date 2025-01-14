@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog UI</title>
+    <link rel="stylesheet" href="stle.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login/Register</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Blog Posts</h1>
+        <div id="posts">
+            <!-- Blog posts will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="login">
+        <h1>Login / Register</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <form id="registerForm">
+            <input type="text" id="newUsername" placeholder="Username" required>
+            <input type="password" id="newPassword" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="dashboard">
+        <h1>Dashboard</h1>
+        <button id="createPost">Create New Post</button>
+        <div id="userPosts">
+            <!-- User's posts will be dynamically managed here -->
+        </div>
+    </section>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
